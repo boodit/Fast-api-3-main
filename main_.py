@@ -6,17 +6,17 @@ app = FastAPI()
 
 @app.get("/")
 async def p_index():
-    return {"FIO": "Долгушина Ангелина Алексеевна"}
+    return {"FIO": "A"}
 
 
 @app.get("/users", response_class=HTMLResponse)
 async def p_users():
-    output = "<h3> Phone Number:+7923*****94 </h3>"
+    output = "<h3> B </h3>"
     return output
 
 @app.get("/tools", response_class=HTMLResponse)
 async def p_tools():
-    output = "<h2> <center> Python Junior <br> Designer <br> Artist </center></h2>"
+    output = "<h2> <center> P2 <br> 1 <br> 3 </center></h2>"
     return output
 
 if __name__ == "__main__":
